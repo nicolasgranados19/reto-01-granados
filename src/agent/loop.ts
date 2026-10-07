@@ -70,7 +70,7 @@ function registrarLog(sessionId: string, herramienta: string, ok: boolean, resum
   }
 }
 
-const CLAVES_CONFIRMACION = ["confirmaciones", "requiere_confirmacion", "campos_por_confirmar"]
+const CLAVES_CONFIRMACION = ["confirmaciones", "requiere_confirmacion", "campos_por_confirmar", "requiere_revision"]
 
 /** true si algún nivel del resultado trae campos por confirmar (lista no vacía o estado requiere_confirmacion). */
 function hayPorConfirmar(v: unknown, profundidad = 0): boolean {
